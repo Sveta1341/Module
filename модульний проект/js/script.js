@@ -3,4 +3,8 @@ $(document).ready(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
+	$('.menu_burger').click(function (event) {
+		$('.menu_burger,.header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
 });
